@@ -8,7 +8,8 @@
     <title>The learnest</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="body">
@@ -16,25 +17,68 @@
     <div class="container header-container">
         <nav class="header-navigation ">
             <a href="index.html" class="header-logo">
-                <img src="./images/logo.svg" alt="">
-<!--                <svg class="logo" width="160px" height="30px">-->
-<!--                    <use class="" href="./images/logo.svg"></use>-->
-<!--                </svg>-->
+                <img class="logo" src="./images/logo.svg" alt="">
+                <!--                <svg class="logo" width="160px" height="30px">-->
+                <!--                    <use class="" href="./images/logo.svg"></use>-->
+                <!--                </svg>-->
             </a>
 
             <ul class="header-navigation__list list ">
-                <li class="header-navigation__list-item "><a class="header-navigation__list-item-link link " href="#">Про нас</a>
+                <li class="header-navigation__list-item "><a class="header-navigation__list-item-link link " href="#">Про
+                    нас</a>
                 </li>
                 <li class="header-navigation__list-item "><a class="header-navigation__list-item-link link " href="#">Курси</a>
                 </li>
                 <li class="header-navigation__list-item "><a class="header-navigation__list-item-link link " href="#">Зв’язок</a>
                 </li>
-                <li class="header-navigation__list-item "><a class="header-navigation__list-item-link link " href="#">UA | EN</a>
+                <li class="header-navigation__list-item "><a class="header-navigation__list-item-link link " href="#">UA
+                    | EN</a>
                 </li>
             </ul>
+            <button class="header-navigation__mobile-btn js-open-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="28" viewBox="0 0 46 28" fill="none">
+                    <path d="M2 2H44" stroke="#C40000" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M2 14H44" stroke="#C40000" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M2 26H44" stroke="#C40000" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </button>
         </nav>
     </div>
 </header>
+<div class="mobile-menu js-menu-container">
+    <div class="mobile-menu-container">
+    <button type="button" class="modal-btn-close js-close-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="41" viewBox="0 0 39 41" fill="none">
+            <path d="M28.9266 13.2024L27.0936 11.2754L19.8266 18.9151L12.5596 11.2754L10.7266 13.2024L17.9936 20.8421L10.7266 28.4817L12.5596 30.4087L19.8266 22.7691L27.0936 30.4087L28.9266 28.4817L21.6596 20.8421L28.9266 13.2024Z" fill="black"/>
+        </svg>
+    </button>
+    <ul class="mobile-menu__list list ">
+        <li class="mobile-menu__item">
+            <a class="mobile-menu__item-link link " href="">Про нас</a>
+        </li>
+        <li class="mobile-menu__item ">
+            <a class="mobile-menu__item-link link " href="">Курси</a>
+        </li>
+        <li class="mobile-menu__item ">
+            <a class="mobile-menu__item-link link " href="">Зв’язок</a>
+        </li>
+        <li class="mobile-menu__item ">
+            <a class="mobile-menu__item-link link " href="">UA | EN</a>
+        </li>
+    </ul>
+
+        <ul class="mobile-menu__soc link list ">
+            <li class="mobile-menu__soc-item "><a class="mobile-menu__soc-link link " href="tel:0980000000">(098) 000 00
+                00</a>
+            </li>
+            <li class="mobile-menu__soc-item "><a class="mobile-menu__soc-link link " href="tel:0990000000">(099) 000 00
+                00</a>
+            </li>
+            <li class="mobile-menu__soc-item"><a class="mobile-menu__soc-link link " href="mailto:school@gmail.com">school@gmail.com</a>
+            </li>
+        </ul>
+    </div>
+</div>
 <main>
     <section class="hero">
         <div class="container hero-container">
@@ -47,7 +91,7 @@
                     унікальну можливість освоїти велич і розмаїття української мови за допомогою наших професійних та
                     захоплюючих курсів. Різнорівневі інтерактивні курси для дорослих і дітей, українців та
                     іноземців.</p>
-                <button type="button" class="hero__button">
+                <button type="button" class="hero__button button">
                     Детальніше
                 </button>
             </div>
@@ -163,5 +207,6 @@
 <!--        </ul>-->
 <!--    </div>-->
 <!--</footer>-->
+<script src="./js/menu.js"></script>
 </body>
 </html>

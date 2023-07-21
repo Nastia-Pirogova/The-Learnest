@@ -2,62 +2,63 @@
 @import "libs";
 @import "fonts";
 @import "global";
+@import "media";
 
 .header {
   &-navigation {
     display: flex;
-    gap: 64px;
+    gap: 30px;
     align-items: center;
     padding: 25px 0;
 
     &__list {
-      display: flex;
-      gap: 100px;
-      font-size: 20px;
-      font-weight: 400;
+      display: none;
+    }
 
-      &-item-link {
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      &-item-link:hover {
-        color: $red;
-      }
+    &-img {
+      width: 272px;
+    }
+    &__mobile-btn{
+      background: none;
+      border: none;
     }
   }
+
 }
 
-.hero {
-  margin-top: 40px;
-  &-container {
-    display: flex;
-    align-items: center;
+.hero{
+  margin-top: 63px;
+  &-inner {
+    margin-bottom: 35px;
   }
-
-  &-tagline {
-    font-size: 28px;
-    font-weight: 700;
+  &-tagline{
     color: $red;
-    margin-bottom: 23px;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 12px;
   }
-
   &-title {
-    font-size: 60px;
+    font-size: 36px;
     font-weight: 800;
     text-transform: uppercase;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
+
   }
-  &-descr{
-    font-size: 28px;
+  &-descr {
+    font-size: 17px;
     font-weight: 400;
+    margin-bottom: 30px;
   }
-  &__button{
-    padding: 30px 130px;
+  &__button {
+    padding: 20px 60px;
     color: $grey;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
     border: none;
-    margin-top: 73px;
+
     margin-left: 8px;
+  }
+  &-img {
+    width: 280px;
   }
 }

@@ -2,7 +2,7 @@
 @import "libs";
 @import "fonts";
 @import "global";
-@import "media";
+
 
 .header {
   &-navigation {
@@ -62,3 +62,5 @@
     width: 290px;
   }
 }
+
+@import "media";

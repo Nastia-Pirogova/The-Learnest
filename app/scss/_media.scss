@@ -1,3 +1,27 @@
+@media screen and (min-width: 480px) {
+  .container {
+    padding: 0 22px;
+    width: 480px;
+  }
+  .header-navigation {
+    gap: 176px;
+  }
+  .hero-img {
+    width: 390px;
+    margin: auto;
+  }
+  .about-us__span {
+    right: 162px;
+  }
+  .about-us__title-logo {
+    font-size: 53px;
+  }
+  .about-us__include-list {
+    margin-bottom: 27px;
+  }
+}
+
+
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 46px;
@@ -58,6 +82,94 @@
       width: 676px;
     }
   }
+  .title {
+    font-size: 60px;
+  }
+  .about-us__descr {
+    font-size: 28px;
+  }
+  .about-us__span {
+    right: 259px;
+    font-size: 30px;
+  }
+  .about-us__include {
+    font-size: 25px;
+  }
+  .about-us__include-list-item {
+    font-size: 22px;
+    gap: 50px;
+  }
+  .about-us__title-logo {
+    font-size: 84px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 25px;
+    width: 1440px;
+  }
+  .header-navigation {
+    padding: 35px 0;
+  }
+  .header-navigation__list {
+    gap: 60px;
+  }
+  .hero-container {
+    display: flex;
+  }
+  .about-us__inner {
+    display: flex;
+    position: relative;
+  }
+  .about-us__information {
+    margin-top: 245px;
+    position: relative;
+  }
+  h5.about-us__span {
+    left: 95px;
+  }
+  .about-us__descr {
+    width: 879px;
+  }
+  li.about-us__include-list-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    width: calc((100% - 109px)/3);
+  }
+  .about-us__images {
+    display: block;
+  }
+
+  ul.about-us__include-list {
+    gap: 54px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about-us__include {
+    font-size: 30px;
+  }
+  svg.about-us__include-list-item-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-us__title-logo {
+    font-size: 116px;
+  }
+  .about-us__title-logo {
+    letter-spacing: 16.11px;
+    font-size: 146px;
+    position: absolute;
+    left: -429px;
+    width: 1358px;
+    bottom: 55px;
+  }
+
 }
 
 @media screen and (min-width: 1920px) {
@@ -82,5 +194,25 @@
     &-img {
       width: 865px;
     }
+
+    &-descr {
+      margin-bottom: 63px;
+    }
+
+  }
+
+  .about-us__information {
+    margin-left: 100px;
+  }
+
+  li.about-us__include-list-item {
+    width: calc((100% - 287px)/3);
+  }
+
+  .about-us__title-logo {
+    font-size: 179px;
+    left: -530px;
+    width: 1624px;
+    bottom: 55px;
   }
 }

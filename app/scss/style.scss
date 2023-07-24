@@ -107,6 +107,7 @@
         font-size: 18px;
         font-weight: 400;
         gap: 20px;
+
         &-icon {
 
         }
@@ -122,9 +123,158 @@
     margin-top: 10px;
   }
 
-  &__images{
+  &__images {
     display: none;
   }
+}
+
+.our-courses {
+  margin: 140px 0;
+
+  &__span {
+    top: -16px;
+    right: 20px;
+    position: absolute;
+  }
+
+  &__kids-title {
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 70px;
+  }
+
+  &__kids-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px 0;
+    text-align: center;
+
+    &-item {
+
+      &-inner {
+        border-radius: 30px;
+        border: 3px solid #000;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &-img {
+      width: 244px;
+      border-radius: 30px;
+      object-fit: cover;
+    }
+
+    &-title {
+      text-align: center;
+      margin: 17px 0 10px 0;
+    }
+
+    &-description {
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    &-details {
+      display: flex;
+      font-size: 9px;
+      gap: 18px;
+      margin-bottom: 15px;
+      text-align: center;
+
+      &-number {
+        color: $red;
+      }
+    }
+
+    &-button {
+      padding: 15px 73px;
+      border: none;
+      color: $white;
+      font-weight: 500;
+    }
+
+  }
+}
+
+.advice {
+  margin: 50px 0;
+
+  &-inner {
+    &__title {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    &__descr {
+      font-size: 20px;
+    }
+
+    &__image {
+      margin: auto;
+      position: relative;
+    }
+
+    &__svg-1 {
+      position: absolute;
+      top: 252px;
+      left: 11px;
+    }
+
+    &__svg-2 {
+      right: -5px;
+      position: absolute;
+      bottom: 50px;
+    }
+  }
+
+  &__span{
+    right: 0;
+    position: absolute;
+    top: -20px;
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__input {
+      border-radius: 60px;
+      border: 3px solid #000;
+      width: 100%;
+      padding: 10px 20px;
+    }
+
+    &__textarea {
+      border-radius: 40px;
+      border: 3px solid #000;
+      width: 100% !important;
+      padding: 20px;
+      height: 215px;
+      resize: none;
+    }
+
+    &__btn {
+      font-size: 15px;
+      color: #EFEFEF;
+      font-weight: 700;
+      padding: 15px 66px;
+      border: none;
+    }
+  }
+
+
+  &-container {
+    position: relative;
+  }
+
+
 }
 
 @import "media";

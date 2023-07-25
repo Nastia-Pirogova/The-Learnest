@@ -30,9 +30,11 @@
       font-size: 28px;
       margin: 17px 0;
     }
-   &__kids-list {
+
+    &__kids-list {
       width: 100%;
     }
+
     &__kids-list-description {
       font-size: 18px;
       margin-bottom: 20px;
@@ -71,7 +73,7 @@
   .advice {
     &-form__input {
       border-radius: 60px;
-      border: 3px solid #000;
+      border: 3px solid $black;
       width: 100%;
       padding: 20px;
     }
@@ -86,449 +88,499 @@
       left: 88px;
     }
   }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 0 46px;
-    width: 768px;
-  }
-  .title {
-    font-size: 60px;
-  }
-  .header-navigation__mobile-btn {
-    display: none;
-  }
-  .ukrainian-language-school {
-    font-size: 30px;
-  }
-  .header {
+  .footer {
     &-navigation {
-      display: flex;
-      gap: 64px;
-      align-items: center;
-      padding: 25px 0;
 
-      &__list {
-        display: flex;
-        gap: 37px;
-        font-size: 20px;
-        font-weight: 400;
-
-        &-item-link {
-          transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        &-item-link:hover {
-          color: $red;
-        }
+      &__address {
+        font-size: 28px;
       }
-    }
-  }
-  .hero {
-    margin-top: 125px;
 
-    &-inner {
-      margin-bottom: 35px;
-    }
+      &__phone {
+        font-size: 28px;
+      }
 
-    &-tagline {
-      font-size: 27px;
+      &__mail {
+        font-size: 28px;
+      }
     }
 
     &-title {
-      font-size: 60px;
-
-    }
-
-    &-descr {
       font-size: 28px;
     }
 
-    &__button {
-      padding: 30px 91px;
-      font-size: 28px;
+    &-policy__link {
+      font-size: 18px;
     }
 
-    &-img {
-      width: 676px;
-    }
-  }
-  .about-us {
-    margin-top: 200px;
-
-    &__descr {
-      font-size: 28px;
-    }
-
-    &__span {
-      right: 259px;
-      font-size: 30px;
-    }
-
-    &__include {
-      font-size: 25px;
-
-      &-list-item {
-        font-size: 22px;
-        gap: 50px;
-      }
-    }
-
-    &__title-logo {
-      font-size: 84px;
-    }
-  }
-  .our-courses {
-    &__kids-list {
-      width: 500px;
-      margin: 20px auto 40px auto;
-    }
-
-    &__kids-list-description {
-      font-size: 20px;
-      margin-bottom: 35px;
-    }
-
-    &__kids-list-details-item {
-      font-size: 17px;
-    }
-
-    &__kids-list-button {
-      padding: 25px 140px;
-      font-size: 25px;
-    }
-
-    &__kids-list-title {
-      font-size: 30px;
-      margin: 25px 0;
-    }
-    &__kids-title {
-      margin-top: 60px;
-    }
-    &__kids-list-item {
-      background-image: url(../images/rectangle-courses.svg);
-      background-repeat: no-repeat;
-      background-position: 15px -1px;
-      background-size: 469px 656px;
-      padding: 25px 0;
-    }
-
-    &__span {
-      right: 161px;
-    }
-
-    &__kids-list-img {
-      width: 430px;
-    }
-  }
-
-  .advice {
-    &-inner__title {
-      font-size: 60px;
-    }
-
-    &__span {
-      top: -20px;
-      right: 41px;
-      position: absolute;
-    }
-
-    &-inner__image {
-      width: 267px;
-    }
-
-    &-inner__svg-2 {
-      right: 201px;
-    }
-
-    &-inner__svg-1 {
-      top: 246px;
-      left: 179px;
-    }
   }
 }
-
-@media screen and (min-width: 1440px) {
-  .container {
-    padding: 0 25px;
-    width: 1440px;
-  }
-  .header-navigation {
-    padding: 35px 0;
-  }
-  .header-navigation__list {
-    gap: 60px;
-  }
-  .hero-container {
-    display: flex;
-  }
-  .about-us {
-
-    &__inner {
-      display: flex;
-      position: relative;
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 46px;
+      width: 768px;
     }
-
-    &__information {
-      margin-top: 245px;
-      position: relative;
+    .title {
+      font-size: 60px;
     }
-
-    &__span {
-      left: 95px;
+    .header-navigation__mobile-btn {
+      display: none;
     }
-
-    &__descr {
-      width: 879px;
-    }
-
-    &__include {
+    .ukrainian-language-school {
       font-size: 30px;
-
-      &-list-item {
+    }
+    .header {
+      &-navigation {
         display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-        width: calc((100% - 109px) / 3);
-
-        &-icon {
-          width: 100px;
-          height: 100px;
-        }
-      }
-
-      &-list {
-        gap: 54px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-    }
-
-    &__images {
-      display: block;
-    }
-
-    &__title-logo {
-      letter-spacing: 16.11px;
-      font-size: 146px;
-      position: absolute;
-      left: -429px;
-      width: 1358px;
-      bottom: 55px;
-    }
-  }
-  .our-courses {
-    &__kids-list-item {
-      width: calc((100% - 62px) / 3);
-      background-image: none;
-      padding: 0;
-    }
-
-    &__span.ukrainian-language-school {
-      left: 245px;
-      top: 14px;
-    }
-
-    &__kids-list {
-      width: 100%;
-      flex-direction: row;
-    }
-
-    &__kids-list-button {
-      padding: 25px 112px;
-    }
-
-    &__kids-title {
-      margin-top: 70px;
-    }
-
-    &__kids-list-img {
-      width: 400px;
-    }
-
-    &__kids-list-details-item {
-      font-size: 15px;
-    }
-
-  }
-
-  .advice {
-    &-inner {
-      display: flex;
-      gap: 100px;
-
-      &__descr {
-        font-size: 30px;
-        width: 738px;
-      }
-
-      &__image {
-        width: 400px;
-      }
-
-      &__svg-1 {
-        top: 302px;
-        left: 122px;
-      }
-
-      &__svg-2 {
-        right: 120px;
-        bottom: 227px;
-      }
-
-      &__svg {
-        width: 225px;
-      }
-    }
-
-    &-form {
-      width: 600px;
-      gap: 20px;
-
-      &__btn {
-        font-size: 28px;
-        padding: 30px 66px;
-      }
-
-      &__input {
-        padding: 30px 40px;
-        font-size: 25px;
-      }
-
-      &__textarea {
-        padding: 30px 40px;
-        height: 250px;
-        font-size: 25px;
-      }
-
-    }
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .container {
-    padding: 0 142px;
-    width: 1920px;
-  }
-  .header-navigation__list {
-    gap: 100px;
-  }
-  .ukrainian-language-school {
-    left: 342px;
-    top: 31px;
-  }
-  .hero {
-    margin-top: 100px;
-
-    &-container {
-      display: flex;
-      align-items: center;
-    }
-
-    &-img {
-      width: 865px;
-    }
-
-    &-descr {
-      margin-bottom: 63px;
-    }
-
-  }
-  .about-us {
-    &__information {
-      margin-left: 100px;
-    }
-
-    &__include-list-item {
-      width: calc((100% - 287px) / 3);
-    }
-
-    &__title-logo {
-      font-size: 179px;
-      left: -530px;
-      width: 1624px;
-      bottom: 55px;
-    }
-  }
-  .our-courses {
-
-    &__kids-list {
-      margin: 30px auto;
-
-      &-item {
-        width: calc((100% - 62px) / 3);
-        background-image: url(../images/rectangle-courses.svg);
+        gap: 64px;
+        align-items: center;
         padding: 25px 0;
-        background-repeat: no-repeat;
-        background-position: 11px 6px;
-        background-size: 503px 656px;
-      }
+        justify-content: flex-start;
 
-      &-button {
-        padding: 25px 146px;
-      }
+        &__list {
+          display: flex;
+          gap: 37px;
+          font-size: 20px;
+          font-weight: 400;
 
-      &-details {
-        gap: 16px;
-        justify-content: center;
-        margin-bottom: 25px;
+          &-item-link {
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
 
-        &-item {
-          font-size: 15px;
-
-          &-inner {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+          &-item-link:hover {
+            color: $red;
           }
         }
+      }
+    }
+    .hero {
+      margin-top: 125px;
 
+      &-inner {
+        margin-bottom: 35px;
+      }
+
+      &-tagline {
+        font-size: 27px;
       }
 
       &-title {
-        margin: 30px 0;
+        font-size: 60px;
+
       }
 
+      &-descr {
+        font-size: 28px;
+      }
+
+      &__button {
+        padding: 30px 91px;
+        font-size: 28px;
+      }
 
       &-img {
-        width: 450px;
+        width: 676px;
+      }
+    }
+    .about-us {
+      margin-top: 200px;
+
+      &__descr {
+        font-size: 28px;
       }
 
+      &__span {
+        right: 259px;
+        font-size: 30px;
+      }
+
+      &__include {
+        font-size: 25px;
+
+        &-list-item {
+          font-size: 22px;
+          gap: 50px;
+        }
+      }
+
+      &__title-logo {
+        font-size: 84px;
+      }
+    }
+    .our-courses {
+      &__kids-list {
+        width: 500px;
+        margin: 20px auto 40px auto;
+      }
+
+      &__kids-list-description {
+        font-size: 20px;
+        margin-bottom: 35px;
+      }
+
+      &__kids-list-details-item {
+        font-size: 17px;
+      }
+
+      &__kids-list-button {
+        padding: 25px 140px;
+        font-size: 25px;
+      }
+
+      &__kids-list-title {
+        font-size: 30px;
+        margin: 25px 0;
+      }
+
+      &__kids-title {
+        margin-top: 60px;
+      }
+
+      &__kids-list-item {
+        background-image: url(../images/rectangle-courses.svg);
+        background-repeat: no-repeat;
+        background-position: 15px -1px;
+        background-size: 469px 656px;
+        padding: 25px 0;
+      }
+
+      &__span {
+        right: 161px;
+      }
+
+      &__kids-list-img {
+        width: 430px;
+      }
+    }
+    .advice {
+      &-inner__title {
+        font-size: 60px;
+      }
+
+      &__span {
+        top: -20px;
+        right: 41px;
+        position: absolute;
+      }
+
+      &-inner__image {
+        width: 267px;
+      }
+
+      &-inner__svg-2 {
+        right: 201px;
+      }
+
+      &-inner__svg-1 {
+        top: 246px;
+        left: 179px;
+      }
     }
   }
-  .advice {
-    margin: 150px 0;
 
-    &-form {
-      width: 630px;
-      gap: 20px;
+  @media screen and (min-width: 1440px) {
+    .container {
+      padding: 0 25px;
+      width: 1440px;
     }
+    .header-navigation {
+      padding: 35px 0;
+    }
+    .header-navigation__list {
+      gap: 60px;
+    }
+    .hero-container {
+      display: flex;
+    }
+    .about-us {
 
-    &-inner {
-      justify-content: space-between;
-
-      &__svg-1 {
-        top: 411px;
-        left: 136px;
+      &__inner {
+        display: flex;
+        position: relative;
       }
 
-      &__svg-2 {
-        right: 122px;
-        bottom: 90px;
+      &__information {
+        margin-top: 245px;
+        position: relative;
+      }
+
+      &__span {
+        left: 95px;
       }
 
       &__descr {
-        font-size: 40px;
-        width: 738px;
+        width: 879px;
+      }
+
+      &__include {
+        font-size: 30px;
+
+        &-list-item {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          gap: 20px;
+          width: calc((100% - 109px) / 3);
+
+          &-icon {
+            width: 100px;
+            height: 100px;
+          }
+        }
+
+        &-list {
+          gap: 54px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+      }
+
+      &__images {
+        display: block;
+      }
+
+      &__title-logo {
+        letter-spacing: 16.11px;
+        font-size: 146px;
+        position: absolute;
+        left: -429px;
+        width: 1358px;
+        bottom: 55px;
       }
     }
-    &__span {
-      top: -15px;
-      right: 16px;
-      position: absolute;
+    .our-courses {
+      &__kids-list-item {
+        width: calc((100% - 62px) / 3);
+        background-image: none;
+        padding: 0;
+      }
+
+      &__span.ukrainian-language-school {
+        left: 245px;
+        top: 14px;
+      }
+
+      &__kids-list {
+        width: 100%;
+        flex-direction: row;
+      }
+
+      &__kids-list-button {
+        padding: 25px 112px;
+      }
+
+      &__kids-title {
+        margin-top: 70px;
+      }
+
+      &__kids-list-img {
+        width: 400px;
+      }
+
+      &__kids-list-details-item {
+        font-size: 15px;
+      }
+
+    }
+
+    .advice {
+      &-inner {
+        display: flex;
+        gap: 100px;
+
+        &__descr {
+          font-size: 30px;
+          width: 738px;
+        }
+
+        &__image {
+          width: 400px;
+        }
+
+        &__svg-1 {
+          top: 302px;
+          left: 122px;
+        }
+
+        &__svg-2 {
+          right: 120px;
+          bottom: 227px;
+        }
+
+        &__svg {
+          width: 225px;
+        }
+      }
+
+      &-form {
+        width: 600px;
+        gap: 20px;
+
+        &__btn {
+          font-size: 28px;
+          padding: 30px 66px;
+        }
+
+        &__input {
+          padding: 30px 40px;
+          font-size: 25px;
+        }
+
+        &__textarea {
+          padding: 30px 40px;
+          height: 250px;
+          font-size: 25px;
+        }
+
+      }
+    }
+
+
+    .footer-navigation {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      grid-template-areas:
+    "address contact"
+    "social social";
+    }
+
+    .footer-navigation__container:nth-child(1) {
+      grid-area: address;
+    }
+
+    .footer-navigation__container:nth-child(3) {
+      grid-area: contact;
+    }
+    .footer__soc-list {
+      gap: 25px;
     }
   }
-}
+
+  @media screen and (min-width: 1920px) {
+    .container {
+      padding: 0 142px;
+      width: 1920px;
+    }
+    .header-navigation__list {
+      gap: 100px;
+    }
+    .ukrainian-language-school {
+      left: 342px;
+      top: 31px;
+    }
+    .hero {
+      margin-top: 100px;
+
+      &-container {
+        display: flex;
+        align-items: center;
+      }
+
+      &-img {
+        width: 865px;
+      }
+
+      &-descr {
+        margin-bottom: 63px;
+      }
+
+    }
+    .about-us {
+      &__information {
+        margin-left: 100px;
+      }
+
+      &__include-list-item {
+        width: calc((100% - 287px) / 3);
+      }
+
+      &__title-logo {
+        font-size: 179px;
+        left: -530px;
+        width: 1624px;
+        bottom: 55px;
+      }
+    }
+    .our-courses {
+
+      &__kids-list {
+        margin: 30px auto;
+
+        &-item {
+          width: calc((100% - 62px) / 3);
+          background-image: url(../images/rectangle-courses.svg);
+          padding: 25px 0;
+          background-repeat: no-repeat;
+          background-position: 11px 6px;
+          background-size: 503px 656px;
+        }
+
+        &-button {
+          padding: 25px 146px;
+        }
+
+        &-details {
+          gap: 16px;
+          justify-content: center;
+          margin-bottom: 25px;
+
+          &-item {
+            font-size: 15px;
+
+            &-inner {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+
+        }
+
+        &-title {
+          margin: 30px 0;
+        }
+
+
+        &-img {
+          width: 450px;
+        }
+
+      }
+    }
+    .advice {
+      margin: 150px 0;
+
+      &-form {
+        width: 630px;
+        gap: 20px;
+      }
+
+      &-inner {
+        justify-content: space-between;
+
+        &__svg-1 {
+          top: 411px;
+          left: 136px;
+        }
+
+        &__svg-2 {
+          right: 122px;
+          bottom: 90px;
+        }
+
+        &__descr {
+          font-size: 40px;
+          width: 738px;
+        }
+      }
+
+      &__span {
+        top: -15px;
+        right: 16px;
+        position: absolute;
+      }
+    }
+
+  }
+

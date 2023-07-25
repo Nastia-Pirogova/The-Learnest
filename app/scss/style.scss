@@ -11,6 +11,7 @@
     align-items: center;
     padding: 25px 0;
     justify-content: space-between;
+
     &__list {
       display: none;
     }
@@ -156,7 +157,7 @@
 
       &-inner {
         border-radius: 30px;
-        border: 3px solid #000;
+        border: 3px solid $black;
         padding: 20px;
         text-align: center;
         display: flex;
@@ -236,11 +237,12 @@
     }
   }
 
-  &__span{
+  &__span {
     right: 0;
     position: absolute;
     top: -20px;
   }
+
   &-form {
     display: flex;
     flex-direction: column;
@@ -248,23 +250,25 @@
 
     &__input {
       border-radius: 60px;
-      border: 3px solid #000;
+      border: 3px solid $black;
       width: 100%;
       padding: 10px 20px;
+      background-color: $grey;
     }
 
     &__textarea {
       border-radius: 40px;
-      border: 3px solid #000;
+      border: 3px solid $black;
       width: 100% !important;
       padding: 20px;
       height: 215px;
       resize: none;
+      background-color: $grey;
     }
 
     &__btn {
       font-size: 15px;
-      color: #EFEFEF;
+      color: $grey;
       font-weight: 700;
       padding: 15px 66px;
       border: none;
@@ -277,6 +281,99 @@
   }
 
 
+}
+
+.footer {
+  background-color: $red;
+  color: $grey;
+  padding: 88px 0 40px 0;
+
+  &-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    &__address {
+      font-size: 20px;
+      font-style: normal;
+      color: $grey;
+      font-weight: 400;
+      transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    &__phone {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      color: $grey;
+      transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__mail {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      color: $grey;
+      transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &-title {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &-policy__link {
+    color: $grey;
+    font-size: 10px;
+  }
+
+  &__soc-list {
+    display: flex;
+    gap: 10px;
+
+    &-item {
+      width: 65px;
+      height: 65px;
+      background: $grey;
+      border-radius: 50%;
+      padding: 15px;
+      transition: background 450ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+  }
+
+  &__soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-policy {
+    margin-top: 160px;
+  }
+}
+
+.footer__soc-list-item:hover {
+  background: $black;
+}
+.footer-navigation__mail:hover {
+  color: $black;
+}
+.footer-navigation__phone:hover{
+  color: $black;
+}
+.footer-navigation__address:hover {
+  color: $black;
 }
 
 @import "media";

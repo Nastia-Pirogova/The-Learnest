@@ -355,9 +355,9 @@
         padding: 0;
       }
 
-      &__span.ukrainian-language-school {
-        left: 245px;
-        top: 14px;
+      &__span {
+        left: 247px;
+        top: 12px;
       }
 
       &__kids-list {
@@ -435,7 +435,6 @@
       }
     }
 
-
     .footer-navigation {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -500,6 +499,10 @@
         left: -530px;
         width: 1624px;
         bottom: 55px;
+      }
+      &__span{
+        left: 84px;
+        top: 0px;
       }
     }
     .our-courses {

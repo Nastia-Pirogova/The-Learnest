@@ -29,8 +29,8 @@ gulp.task('css', function () {
     return gulp
         .src([
             'node_modules/normalize.css/normalize.css',
-            'node_modules/slick-carousel/slick/slick.css',
-            'node_modules/animate.css/animate.css',
+            // 'node_modules/slick-carousel/slick/slick.css',
+            // 'node_modules/animate.css/animate.css',
         ])
         .pipe(concat('_libs.scss'))
         .pipe(gulp.dest('app/scss'))
@@ -45,16 +45,26 @@ gulp.task('script', function () {
     return gulp.src('app/js/*.js').pipe(browserSync.stream());
 });
 
+// gulp.task('js', function () {
+//     return gulp
+//         .src([
+//             // 'node_modules/slick-carousel/slick/slick.js',
+//             // 'node_modules/wow.js/dist/wow.js',
+//         ])
+//         .pipe(concat('libs.min.js'))
+//         .pipe(uglify())
+//         .pipe(gulp.dest('app/js'))
+//         .pipe(browserSync.stream());
+// });
 gulp.task('js', function () {
     return gulp
         .src([
-            'node_modules/slick-carousel/slick/slick.js',
-            'node_modules/wow.js/dist/wow.js',
+            'app/js/*.js', // Update this path based on your project structure
         ])
-        .pipe(concat('libs.min.js'))
+        .pipe(concat('scripts.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('app/js'))
-        .pipe(browserSync.stream());
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('dist/js')); // Update the destination folder if needed
 });
 
 gulp.task('browser-sync', function () {

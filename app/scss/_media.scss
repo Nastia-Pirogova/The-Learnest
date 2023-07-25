@@ -30,7 +30,9 @@
       font-size: 28px;
       margin: 17px 0;
     }
-
+   &__kids-list {
+      width: 100%;
+    }
     &__kids-list-description {
       font-size: 18px;
       margin-bottom: 20px;
@@ -180,7 +182,7 @@
   .our-courses {
     &__kids-list {
       width: 500px;
-      margin: 40px auto;
+      margin: 20px auto 40px auto;
     }
 
     &__kids-list-description {
@@ -201,7 +203,9 @@
       font-size: 30px;
       margin: 25px 0;
     }
-
+    &__kids-title {
+      margin-top: 60px;
+    }
     &__kids-list-item {
       background-image: url(../images/rectangle-courses.svg);
       background-repeat: no-repeat;

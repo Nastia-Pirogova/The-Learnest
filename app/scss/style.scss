@@ -111,11 +111,12 @@
         gap: 20px;
 
         &-icon {
-
+          flex-shrink: 0;
         }
       }
     }
   }
+
 
   &__title-logo {
     text-align: center;
@@ -129,6 +130,7 @@
     display: none;
   }
 }
+
 
 .our-courses {
   margin: 140px 0;
@@ -354,10 +356,12 @@
     }
 
   }
+
   &__soc-svg {
     width: 30px;
     height: 30px;
   }
+
   &__soc-link {
     display: flex;
     align-items: center;
@@ -372,12 +376,15 @@
 .footer__soc-list-item:hover {
   background: $black;
 }
+
 .footer-navigation__mail:hover {
   color: $black;
 }
-.footer-navigation__phone:hover{
+
+.footer-navigation__phone:hover {
   color: $black;
 }
+
 .footer-navigation__address:hover {
   color: $black;
 }

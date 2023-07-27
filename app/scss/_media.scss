@@ -63,8 +63,8 @@
 
     &__kids-list-img {
       width: 371px;
+      height: 244px;
     }
-
     &__kids-list-img {
       width: 370px;
       object-fit: cover;
@@ -452,7 +452,10 @@
     "address contact"
     "social social";
   }
-
+  .footer__soc-list-item {
+    width: 90px;
+    height: 90px;
+  }
   .footer-navigation__container:nth-child(1) {
     grid-area: address;
   }
@@ -462,6 +465,10 @@
   }
   .footer__soc-list {
     gap: 25px;
+  }
+  .footer__soc-svg {
+    width: 85%;
+    height: 85%;
   }
 }
 

@@ -303,8 +303,6 @@
       position: absolute;
     }
   }
-
-
 }
 
 @media screen and (min-width: 1440px) {
@@ -420,7 +418,6 @@
     }
 
   }
-
   .advice {
     &-inner {
       display: flex;
@@ -492,7 +489,6 @@
       }
     }
   }
-
   .footer-navigation {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -508,7 +504,6 @@
   .footer-navigation__container:nth-child(1) {
     grid-area: address;
   }
-
   .footer-navigation__container:nth-child(3) {
     grid-area: contact;
   }
@@ -519,9 +514,6 @@
     width: 85%;
     height: 85%;
   }
-
-
-
 }
 
 @media screen and (min-width: 1920px) {

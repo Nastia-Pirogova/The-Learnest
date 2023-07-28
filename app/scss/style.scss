@@ -68,6 +68,7 @@
   &-img {
     width: 290px;
     margin: auto;
+    border-radius: 30px;
   }
 }
 
@@ -406,6 +407,14 @@
 
 .footer-navigation__address:hover {
   color: $black;
+}
+
+.course {
+  margin-bottom: 60px;
+}
+.features-course-title {
+  font-size: 33px;
+  margin-bottom: 20px;
 }
 
 

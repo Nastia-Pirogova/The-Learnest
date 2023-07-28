@@ -286,6 +286,26 @@
 
 }
 
+.interest{
+  &-inner__list {
+    gap: 20px;
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+  }
+  &-inner__img {
+    width: 100%;
+    margin: 40px auto;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+  &__span {
+    position: absolute;
+    top: -11px;
+    left: 86px;
+  }
+}
+
 .footer {
   background-color: $red;
   color: $grey;

@@ -65,6 +65,7 @@
       width: 371px;
       height: 244px;
     }
+
     &__kids-list-img {
       width: 370px;
       object-fit: cover;
@@ -276,6 +277,34 @@
       left: 179px;
     }
   }
+  .interest {
+    margin: 80px auto;
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 40px auto;
+
+      &__img {
+        margin: 0 auto;
+        height: 420px;
+      }
+
+      &__list {
+        justify-content: center;
+      }
+
+    }
+
+    &__span {
+      top: -21px;
+      left: 186px;
+      position: absolute;
+    }
+  }
+
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -443,6 +472,26 @@
 
     }
   }
+  .interest {
+    margin: 215px auto;
+
+    &__span {
+      left: 138px;
+    }
+
+    &-inner {
+      gap: 205px;
+
+      &__img {
+        height: 946px;
+      }
+
+      &__list {
+        font-size: 28px;
+        gap: 90px;
+      }
+    }
+  }
 
   .footer-navigation {
     display: grid;
@@ -470,6 +519,9 @@
     width: 85%;
     height: 85%;
   }
+
+
+
 }
 
 @media screen and (min-width: 1920px) {
@@ -601,6 +653,8 @@
       position: absolute;
     }
   }
-
+  .interest__span {
+    top: -6px;
+  }
 }
 

@@ -50,7 +50,7 @@
     }
 
     &__kids-list-item-inner {
-      padding: 30px 20px;
+      padding: 30px;
     }
 
     &__kids-list-item {
@@ -113,6 +113,22 @@
       font-size: 18px;
     }
 
+  }
+  .about-us__modal {
+
+    width: 400px;
+
+    &-title {
+      font-size: 35px;
+    }
+
+    &-list {
+      font-size: 30px;
+    }
+
+    &-close {
+
+    }
   }
 }
 
@@ -302,6 +318,50 @@
       left: 186px;
       position: absolute;
     }
+  }
+
+  .about-us__modal {
+    width: 700px;
+    padding: 50px 30px;
+  }
+  .about-us__modal-close {
+    right: 30px;
+    top: 22px;
+  }
+  .about-us__modal {
+    width: 1000px;
+    padding: 120px 80px
+  }
+  .about-us__modal-title {
+    margin-bottom: 45px;
+  }
+  .about-us__modal-list {
+    gap: 30px;
+  }
+  .about-us__modal-close {
+    right: 50px;
+    top: 40px;
+  }
+  .about-us__modal {
+    width: 700px;
+    padding: 120px 80px;
+  }
+
+  .buy-course-input {
+    padding: 30px 40px;
+    font-size: 25px;
+  }
+  .buy-course-textarea{
+    padding: 30px 40px;
+    font-size: 25px;
+    height: 250px;
+  }
+  .buy-course-btn {
+    font-size: 28px;
+    padding: 30px 20px;
+  }
+  .modal-form {
+    gap: 20px;
   }
 }
 
@@ -514,6 +574,9 @@
     width: 85%;
     height: 85%;
   }
+  section.video {
+    height: 800px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -647,6 +710,31 @@
   }
   .interest__span {
     top: -6px;
+  }
+  .about-us__modal {
+    padding: 120px 80px;
+    border-radius: 30px;
+    background: $grey;
+
+    &-title {
+      font-size: 35px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &-list {
+      font-size: 30px;
+      font-weight: 400;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+    }
+
+    &-close {
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
   }
 }
 

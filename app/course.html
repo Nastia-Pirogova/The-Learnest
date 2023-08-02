@@ -18,10 +18,7 @@
     <div class="container header-container">
         <nav class="header-navigation ">
             <a href="index.html" class="header-logo">
-                The Learnest
-                <!--                <svg class="logo" width="160" height="30">-->
-                <!--                    <use class="logo-use" href="./images/icons.svg#icon-logo"></use>-->
-                <!--                </svg>-->
+                <img class="logo" src="./images/logo.png" alt="logo">
             </a>
 
             <ul class="header-navigation__list list ">
@@ -86,23 +83,64 @@
                 <h1 class="hero-title course-title">
                     Маленькі відкривачі
                 </h1>
-                <p class="hero-descr">Курс "Маленькі відкривачі" призначений для дітей, які тільки починають вивчати українську мову. Цей захоплюючий курс допоможе їм оволодіти основами мовлення, вивчити прості слова та фрази, а також побудувати перші речення. Заняття проводяться в ігровій та дружній атмосфері, використовуючи різноманітні мовні ігри, пісні та творчі завдання. Наші викладачі допоможуть вашим малюкам познайомитися з українською мовою та викликати любов до неї з перших уроків.</p>
-                <button type="button" class="hero__button button">
+                <p class="hero-descr">Вивчення кириличного письма, українського алфавіту
+                    Базова українська розмовна лексика
+                    Правопис слів і правильна вимова їх
+                    Уміння спілкуватися й розуміти співбесідників
+                    Читання й письмо.</p>
+                <button type="button" class="hero__button button" data-modal-open>
                     Придбати
                 </button>
             </div>
             <img class="hero-img" src="./images/our-image-1.jpg" alt="img">
         </div>
     </section>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="about-us__modal buy-course">
+            <button type="button" class="about-us__modal-close modal-btn-close" data-modal-close>
+                <svg class="about-us__modal-close-svg" width="19" height="19">
+                    <use class="" href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h2 class="about-us__modal-title buy-course__title">Оформити замовлення</h2>
+            <form class="modal-form">
+
+                <input type="name" name="name" placeholder="ПІБ" required="" class="buy-course-input" >
+
+                <input type="tel" name="tel" placeholder="Телефон" required="" class="buy-course-input" >
+
+
+                <input type="email" name="email" placeholder="Email" required="" class="buy-course-input" >
+
+
+                <textarea class="buy-course-textarea"  placeholder="Повідомлення" name="user-message"></textarea>
+
+                <button class="buy-course-btn button" type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
     <section class="interest">
         <div class="container">
             <h2 class="title interest-inner__title features-course-title">Особливості курсу:</h2>
             <div class="interest-inner">
                 <ul class="interest-inner__list">
-                    <li class="interest-inner__list-item"><b>Захоплююча та дружня атмосфера: </b> Курс створений таким чином, щоб заняття були цікавими та захоплюючими для дітей. Викладачі використовують ігрові елементи, мовні ігри, пісні та творчі завдання, щоб зробити процес навчання цікавим та захоплюючим. </li>
-                    <li class="interest-inner__list-item"><b>Особистий підхід:</b> Викладачі школи уважно стежать за розвитком кожної дитини і працюють з ними в індивідуальному порядку. Вони допомагають кожному учневі розуміти матеріал, пристосовуються до їхніх потреб та темпу навчання.</li>
-                    <li class="interest-inner__list-item"><b>Розвиток мовлення та комунікативних навичок: </b> Багато слів української мови походять від стародавніх слов'янських коренів, що відображає багату історію нашого народу.</li>
-                    <li class="interest-inner__list-item"><b>Підтримка і мотивація: </b> Викладачі надають підтримку та мотивацію кожному учневі, створюють дружнє середовище, де діти почуваються комфортно і можуть вільно висловлювати свої думки та ідеї.</li>
+                    <li class="interest-inner__list-item"><b>Захоплююча та дружня атмосфера: </b> Курс створений таким
+                        чином, щоб заняття були цікавими та захоплюючими для дітей. Викладачі використовують ігрові
+                        елементи, мовні ігри, пісні та творчі завдання, щоб зробити процес навчання цікавим та
+                        захоплюючим.
+                    </li>
+                    <li class="interest-inner__list-item"><b>Особистий підхід:</b> Викладачі школи уважно стежать за
+                        розвитком кожної дитини і працюють з ними в індивідуальному порядку. Вони допомагають кожному
+                        учневі розуміти матеріал, пристосовуються до їхніх потреб та темпу навчання.
+                    </li>
+                    <li class="interest-inner__list-item"><b>Розвиток мовлення та комунікативних навичок: </b> Багато
+                        слів української мови походять від стародавніх слов'янських коренів, що відображає багату
+                        історію нашого народу.
+                    </li>
+                    <li class="interest-inner__list-item"><b>Підтримка і мотивація: </b> Викладачі надають підтримку та
+                        мотивацію кожному учневі, створюють дружнє середовище, де діти почуваються комфортно і можуть
+                        вільно висловлювати свої думки та ідеї.
+                    </li>
                 </ul>
                 <img class="interest-inner__img" src="./images/features-img.jpeg" width="630" height="946" alt="img">
             </div>
@@ -206,5 +244,6 @@
     </div>
 </footer>
 <script src="./js/menu.js"></script>
+<script src="./js/modal-course.js"></script>
 </body>
 </html>
